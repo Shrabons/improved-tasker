@@ -56,10 +56,17 @@ export default function TaskAddModal({ onUpdateTask, onClose }) {
         isAdd,
       });
       onClose();
-      toast.success(`The Success Your New Task !`, {
-        position: "top-right",
-        theme: "colored",
-      });
+      toast.success(
+        `${
+          isAdd
+            ? "The Success Your New Task !"
+            : "The Success Your Edit Task Completed !"
+        }`,
+        {
+          position: "top-right",
+          theme: "colored",
+        }
+      );
     }
   };
   return (
