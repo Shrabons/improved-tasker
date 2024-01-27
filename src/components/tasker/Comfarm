@@ -1,4 +1,0 @@
-dispatch({
-  type: "delete",
-  id: task.id,
-});
